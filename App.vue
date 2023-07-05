@@ -1,6 +1,7 @@
 <template>
   <div>
-    hello App
+    hello App ~~~~~~~~~~~~~
+    <div>bbbbbb</div>
   </div>
 </template>
 
