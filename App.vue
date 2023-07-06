@@ -24,7 +24,7 @@
         <van-empty v-if="foods.length === 0"  image-size="100" image="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" description="暂无菜品" />
         <van-card
           v-else 
-          v-for="item, index in foods"
+          v-for="item, index222 in foods"
           :key="index"
           :price="item.price"
           :desc="item.info"
@@ -35,7 +35,7 @@
             <van-space class="card-num">
               <van-icon name="minus" @click="handleMinus(activeIndex, index)" />
               <span>{{ item.num }}</span>
-              <van-icon name="plus" @click="handlePlus(activeIndex, index)" />
+              <van-icon name="plusaaaaa" @click="handlePlus(activeIndex, index)" />
             </van-space>
           </template>
         </van-card>
@@ -54,8 +54,6 @@ export default {
     return {
       shop: {},
       items: [],
-      activeIndex: 0,
-      all: 0
     }
   },
   created() {
@@ -100,7 +98,7 @@ export default {
       this.all += Number(this.shop.dynamictags[activeIndex].list[index].price)
 
     },
-    handleMinus(activeIndex, index) {
+    handleMinus(a, b) {
       if( this.shop.dynamictags[activeIndex].list[index].num > 0 ) {
         this.shop.dynamictags[activeIndex].list[index].num--
         this.all -= Number(this.shop.dynamictags[activeIndex].list[index].price)
@@ -117,7 +115,7 @@ export default {
           this.$router.push('/order')
         }
         else {
-          this.$router.push('/login')
+          this.$r'/login')
         }
       })
 
@@ -129,7 +127,7 @@ export default {
 <style lang="scss" scoped>
 
 .van-tree-select {
-  margin-bottom: 50px;
+  margin-bottom: 123px;
 }
 .card-num {
   font-size: 16px;
