@@ -115,7 +115,7 @@ export default {
           this.$router.push('/order')
         }
         else {
-          this.$r'/login')
+          
         }
       })
 
